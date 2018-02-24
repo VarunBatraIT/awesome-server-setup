@@ -1,0 +1,29 @@
+# Checklist
+- Monitor system is running.
+- bs package in installed
+- Everything is in the CRON.
+- Reboot assigns the proper IP
+- Reboot resumes the services
+- Reboot sends an email.
+- Firewall is setup.
+- Firewall enables only specific ips for redis.
+- Firewall enables only specific ips for mysql.
+- Firewall enables only specific ips for monitoring system.
+- Fail2Ban configuration is proper.
+- Fail2Ban has specific IPs as whitelisted.
+- Fail2Ban - Nginx Bots should have at least 60 days banning period.
+- Fail2Ban - Nginx Bots toleration is just 1
+- Logrotate is working for Nginx
+- Logrotate is working for Application Log
+- Logrotate is working for Fail2Ban
+- Sudo Cron has CertBot
+- Certbot is whitelisted to move to one server only.
+- Certbot checks one directory only.
+- Certificates traverse from Master to Slave twice a day.
+- Connections between mysqls are encrypted.
+- There are at least two mysql servers (Master - Passive Master)
+- Monit system is working for forever. 
+- Redis crash is handled properly.
+- Free space is monitored.
+- Free RAM is monitored.
+- API for top memory usage.
